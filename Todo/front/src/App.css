@@ -1,0 +1,155 @@
+/* 🌿 Home container */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
+}
+
+/* 🏷️ Heading */
+.home h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #2d3436;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* 🔍 Search input + button */
+.search_form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search_form input {
+  width: 280px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.search_form input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.25);
+}
+
+.search_form button {
+  padding: 12px 22px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.search_form button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* ✅ Todo item container */
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  width: 340px;
+  transition: all 0.25s ease;
+}
+
+.checkbox:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* 🟢 Icons */
+.checkbox .icon {
+  font-size: 20px;
+  color: #6c757d;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  margin-right: 10px;
+}
+
+.checkbox .icon:hover {
+  color: #28a745;
+  transform: scale(1.2);
+}
+
+.icon.checked {
+  color: #28a745;
+}
+
+/* 🗑️ Delete icon */
+.delete-icon {
+  color: #dc3545;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  margin-left: 12px;
+}
+
+.delete-icon:hover {
+  color: #b71c1c;
+  transform: scale(1.2);
+}
+
+/* ✏️ Task text */
+.checkbox p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  word-break: break-word;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* ✔️ Completed task */
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* 💤 Empty message */
+.home h3 {
+  color: #777;
+  font-weight: 400;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+/* 📱 Responsive */
+@media (max-width: 400px) {
+  .checkbox {
+    width: 100%;
+  }
+
+  .search_form input {
+    width: 100%;
+  }
+
+  .home h2 {
+    font-size: 1.8rem;
+  }
+}
