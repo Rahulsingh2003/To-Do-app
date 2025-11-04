@@ -24,11 +24,41 @@ It allows users to **add, delete, and mark tasks as complete**, providing a clea
 
 ---
 
-## 📦 Installation and Setup  
+## 📁 Folder Structure  
 
-Follow these steps to run the project locally:  
+todo-mern-app/
+│
+├── backend/
+│ ├── Models/
+│ │ └── Todo.js
+│ ├── server.js
+│ └── package.json
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── Home.js
+│ │ │ └── Search.js
+│ │ ├── App.js
+│ │ └── index.js
+│ ├── package.json
+│
+└── README.md
 
-### 1️⃣ Clone the Repository  
-```bash
-git clone https://github.com/yourusername/todo-mern-app.git
-cd todo-mern-app
+---
+
+## 🧠 Learning Highlights  
+
+- Implemented **CRUD functionality** with React and Node.js  
+- Used **Axios** for efficient API communication  
+- Managed **MongoDB** operations using Mongoose  
+- Practiced **clean code structure** and **modular component design**  
+
+---
+
+## 📸 Preview  
+
+![shit](https://github.com/user-attachments/assets/65fb163b-f545-4cd0-9989-b0c7e9243e4f)
+
+
+
